@@ -1,0 +1,19 @@
+---
+layout: default
+title: McGrew's Blog
+---
+<!-- <script type="text/javascript"><!--
+twitterCallBack = function( feed ) {
+	twitterFeed = feed;
+}
+--></script>
+<script src="http://api.twitter.com/1/statuses/user_timeline.json?callback=twitterCallBack&amp;screen_name=tjmcgrew"></script> -->
+
+{% for post in site.posts limit:5 %}
+<h2 style="paddingo-bottom:0;margin-bottom:0">
+	<a href="{{ post.url }}">{{ post.title }}</a><br />
+</h2>
+<div style="font-size:0.8em;color:#888;">Posted on {{ post.date | date_to_long_string }}.</div>
+<p>{{ post.content }}</p>
+{% endfor %}
+
