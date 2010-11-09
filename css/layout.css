@@ -11,6 +11,14 @@ body {
 	font-family: 'Bitstream Vera Sans', Verdana, Arial, sans-serif;
 }
 
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
 div.mainBody {
 	width: 95%;
 	margin: auto;

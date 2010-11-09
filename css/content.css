@@ -7,6 +7,35 @@
  * affect other aspects of the web site.
  */
 
-.twitter ul {
-	list-style-type: disc;
+div.twitter {
+	width: 300px;
+	float:right;
+	font-size:0.8em;
+	border-width: 0 0 1px 1px;
+	border-color: #ccc;
+	border-style: solid;
+	margin: 0 0 10px 10px;
 }
+
+ul.twitter {
+	list-style-type: none;
+	margin: 0;
+	padding:3px 0 3px 3px;
+}
+
+li.twitter span {
+	color: #aaa;
+	font-size: 0.8em;
+	padding: 0;
+}
+
+li.twitter  + li.twitter {
+	border-top: 1px solid #ccc;
+}
+
+div.twitter h3 {
+	text-align:center;
+	padding: 0;
+	margin: 0;
+}
+
