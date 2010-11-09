@@ -1,0 +1,19 @@
+<script type="text/javascript"><!--
+twitterCallback = function( feed ) {
+	document.write( "<ul class='twitter'>" );
+	for ( i in feed ) {
+		var text = feed[ i ].text;
+		text = text.replace( /#([a-zA-Z0-9_]+)/g, "<a href='http://twitter.com/#!/search/%23$1'>#$1</a>" );
+		text = text.replace( /@([a-zA-Z0-9_]+)/g, "<a href='http://twitter.com/$1'>@$1</a>" );
+		document.write( "<li class='twitter'>" );
+		document.write( text );
+		document.write( "<br /><span>" );
+		document.write( feed[ i ].created_at );
+		document.write( "</span>" );
+		document.write( "</li>" );
+	}
+	document.write( "</ul>" );
+};
+--></script>
+<script src="http://api.twitter.com/1/statuses/user_timeline.json?callback=twitterCallback&amp;screen_name=tjmcgrew"></script>
+
