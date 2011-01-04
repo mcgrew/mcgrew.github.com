@@ -7,7 +7,7 @@
  * affect other aspects of the web site.
  */
 
-div.twitter {
+div.twitter, div.picasa {
 	width: 300px;
 	float:right;
 	font-size:0.8em;
@@ -17,7 +17,7 @@ div.twitter {
 	margin: 0 0 10px 10px;
 }
 
-ul.twitter {
+ul.twitter, ul.picasa {
 	list-style-type: none;
 	margin: 0;
 	padding:3px 0 3px 3px;
@@ -29,13 +29,19 @@ li.twitter span {
 	padding: 0;
 }
 
-li.twitter  + li.twitter {
+li.twitter  + li.twitter, li.picasa + li.picasa {
 	border-top: 1px solid #ccc;
 }
 
-div.twitter h3 {
+div.twitter h3, div.picasa h3 {
 	text-align:center;
 	padding: 0;
 	margin: 0;
 }
+
+div.picasa {
+	clear: right;
+	text-align:right;
+}
+
 
