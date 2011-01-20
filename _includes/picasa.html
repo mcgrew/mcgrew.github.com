@@ -3,16 +3,16 @@ picasaCallback = function( feed ) {
 	size = 300;
 	picasa = feed;
 	entry = feed.feed.entry;
-	i = entry.length - 1;
+	i = 0;
 	document.write( "<ul class='picasa'>" );
-	while ( i > entry.length - 5 ) {
+	while ( i < 5 ) {
 		document.write( "<li class='picasa'>" );
 		document.write( "<a href='" + entry[ i ].link[ 1 ].href + "'>" );
 		document.write( "<img src='" );
 		document.write( entry[ i ].content.src.replace( /\/([^\/]*)$/, "/s" + size + "/$1" ));
 		document.write( "' /></a>")
 		document.write( "</li>" );
-		i--;
+		i++;
 	}
 	document.write( "</ul>" );
 };

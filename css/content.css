@@ -29,7 +29,7 @@ li.twitter span {
 	padding: 0;
 }
 
-li.twitter  + li.twitter, li.picasa + li.picasa {
+li.twitter + li.twitter, li.picasa + li.picasa {
 	border-top: 1px solid #ccc;
 }
 
@@ -41,7 +41,7 @@ div.twitter h3, div.picasa h3 {
 
 div.picasa {
 	clear: right;
-	text-align:right;
+	text-align:center;
 }
 
 
