@@ -1,3 +1,9 @@
+---
+layout: default
+---
+## <a href="{{ page.url }}">{{ page.title }}</a> ##
+###### Posted on {{ page.date | date_to_long_string }} ######
+
 So it seems there has at least been a partial solution to the sound problem. Putting the 
 line:
 

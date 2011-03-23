@@ -11,10 +11,6 @@ title: McGrew's Blog
 {% include picasa.html %}
 </div>
 {% for post in site.posts limit:5 %}
-<h2 style="paddingo-bottom:0;margin-bottom:0">
-	<a href="{{ post.url }}">{{ post.title }}</a><br />
-</h2>
-<div style="font-size:0.8em;color:#888;">Posted on {{ post.date | date_to_long_string }}.</div>
-<p>{{ post.content }}</p>
+<div class="postContent">{{ post.content }}</div>
 {% endfor %}
 

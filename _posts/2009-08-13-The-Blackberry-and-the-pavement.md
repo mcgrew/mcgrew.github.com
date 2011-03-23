@@ -1,3 +1,9 @@
+---
+layout: default
+---
+## <a href="{{ page.url }}">{{ page.title }}</a> ##
+###### Posted on {{ page.date | date_to_long_string }} ######
+
 I recently learned an important lesson about Blackberry cell phones. They don't necessarily survive an impact with the 
 roadway at 50 miles per hour. Of course I suppose I wouldn't expect them to.
 

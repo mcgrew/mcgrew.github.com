@@ -1,3 +1,9 @@
+---
+layout: default
+---
+## <a href="{{ page.url }}">{{ page.title }}</a> ##
+###### Posted on {{ page.date | date_to_long_string }} ######
+
 Weight. It is becoming an increasing issue in this country. Americans are some 
 of the most overweight people in the world. It's really an issue that needs to 
 be solved. I don't claim to have all of the answers; it's an issue I've 

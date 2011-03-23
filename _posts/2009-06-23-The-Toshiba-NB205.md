@@ -1,3 +1,9 @@
+---
+layout: default
+---
+## <a href="{{ page.url }}">{{ page.title }}</a> ##
+###### Posted on {{ page.date | date_to_long_string }} ######
+
 I recently bought my first netbook, the Toshiba NB205. I saw it at the Buy More on display for $399, so as I always do 
 with netbooks on display, I tested my typing on the keyboard. Contrary to most netbooks, I could actually type on this 
 one relatively easily. So I did some research to see if there were any problems getting Linux to run on it. I found 
